@@ -2,6 +2,19 @@
     background-image: url("../images/landing_background.png");
     background-repeat: no-repeat;
     font-family: cabin;
+    font-size: 1.2em;
+    background-size: cover;
+}
+
+.LandingPage.container-fluid {
+    padding: 100px;
+}
+
+div.divider {
+    border-bottom: 2px solid darkgray;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .startButton {
@@ -12,8 +25,12 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    margin-top: 40px;
-    margin-bottom: 70px;
+}
+
+div#bottomLogos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 525px;
 }
 
 .startButton:hover{
@@ -24,21 +41,63 @@ img#logoOds {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
-.goal {
-    margin-top: 30px;
+div.goal {
+    padding: 0px 124px;
 }
 
 .goalContent {
     margin-top: 15px;
 }
 
+.bottomLogo {
+    margin: 23px;
+}
+
+div.row1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+div.row2 {
+    padding-bottom: 50px;
+}
+
+div.row3 {
+    padding-bottom: 100px;
+}
+
+div.row4 {
+    padding-bottom: 50px;
+}
+
+div.row5 {
+    padding-bottom: 100px;
+}
+
+div.row6 {
+    padding-bottom: 50px;
+}
+
+div.row7 {
+    padding-bottom: 50px;
+}
+
+div.row8 {
+    padding-bottom: 60px;
+}
+
+div.row10 {
+    padding-top: 50px;
+}
+
 .gray{
     color: gray;
+}
+
+.darkGray{
+    color: darkgray;
 }
 
 .blue {
@@ -46,13 +105,17 @@ img#logoOds {
 }
 
 .fontLarge{
-    font-size: 1.3em;
+    font-size: 1.7em;
 }
 
 .fontMedium{
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .center{
     text-align: center;
+}
+
+.right{
+   text-align: right; 
 }
