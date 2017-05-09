@@ -1,0 +1,58 @@
+.LandingPage{
+    background-image: url("../images/landing_background.png");
+    background-repeat: no-repeat;
+    font-family: cabin;
+}
+
+.startButton {
+    background-image: url(../images/boton_comenzar.png);
+    background-repeat: no-repeat;
+    width: 317px;
+    height: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.startButton:hover{
+   background-image: url(../images/boton_comenzar_hover.png); 
+}
+
+img#logoOds {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.goal {
+    margin-top: 30px;
+}
+
+.goalContent {
+    margin-top: 15px;
+}
+
+.gray{
+    color: gray;
+}
+
+.blue {
+    color: blue;
+}
+
+.fontLarge{
+    font-size: 1.3em;
+}
+
+.fontMedium{
+    font-size: 1.2em;
+}
+
+.center{
+    text-align: center;
+}
