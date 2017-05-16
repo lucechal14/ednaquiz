@@ -12,6 +12,10 @@ app.get('/', function (request, response) {
   response.render('pages/landingPage');
 });
 
+app.get('/test', function (request, response) {
+  response.render('pages/testingPage');
+});
+
 app.listen(app.get('port'), function () {
   console.log('Example app listening on port ', app.get('port'));
 });
