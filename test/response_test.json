@@ -1,0 +1,510 @@
+{
+    "event_id": "hQJi65uTRz",
+    "event_type": "form_response",
+    "form_response": {
+        "form_id": "ZUHVD4",
+        "token": "4969bac7b56e83a82ad060f0ae57faed",
+        "submitted_at": "2017-05-16T00:55:40Z",
+        "definition": {
+            "id": "ZUHVD4",
+            "title": "Herramienta ODS",
+            "fields": [
+                {
+                    "id": "cIaI",
+                    "title": "Nombre",
+                    "type": "short_text"
+                },
+                {
+                    "id": "ZwrI",
+                    "title": "Posición / Puesto",
+                    "type": "short_text"
+                },
+                {
+                    "id": "kiyv",
+                    "title": "Correo electrónico",
+                    "type": "short_text"
+                },
+                {
+                    "id": "HaDG",
+                    "title": "Ciudad de residencia",
+                    "type": "short_text"
+                },
+                {
+                    "id": "D70c",
+                    "title": "Sexo",
+                    "type": "short_text"
+                },
+                {
+                    "id": "o5ha",
+                    "title": "Sector",
+                    "type": "short_text"
+                },
+                {
+                    "id": "Nl2b",
+                    "title": "Nombre de la empresa",
+                    "type": "short_text"
+                },
+                {
+                    "id": "cYfx",
+                    "title": "Cantidad de empleados",
+                    "type": "short_text"
+                },
+                {
+                    "id": "sgSP",
+                    "title": "Nacional / Trasnacional",
+                    "type": "short_text"
+                },
+                {
+                    "id": "bUY8",
+                    "title": "¿Las operaciones de la empresa se basan en el principio precautorio esto quiere decir que, sus operaciones no implican un riesgo de salud ambiental a la población o riesgo ambiental?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "WhLZ",
+                    "title": "Selecciona una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "dwDF",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "rpmQ",
+                    "title": "¿La empresa, consume o promueve la producción de pequeños agrícolas?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "Owv9",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Uoav",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "qBbg",
+                    "title": "¿La empresa hace actividades de alto riesgo?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "W8rX",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Eb9X",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "IMxM",
+                    "title": "¿Cuenta con acciones para la prevención de enfermedades derivadas de la actividad productiva?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "UgZp",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "l8um",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "m6uK",
+                    "title": "¿La empresa hace campañas de prevención de salud, especialmente del consumo nocivo de alcohol?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "Ngs4",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "AECr",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "um0O",
+                    "title": "¿La empresa hace campañas para la prevención y uso moderado del alcohol?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "d0xH",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "M9ZP",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "SFFX",
+                    "title": "¿La empresa capacita a sus empleados para la prevención de accidentes automovilísticos?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "YGNR",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Sp4m",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "TxrM",
+                    "title": "¿La empresa identifica riesgos en sus operaciones, derivadas del manejo de sustancias químicas?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "JKGm",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "dA3F",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "vVhJ",
+                    "title": "¿La empresa identifica los riesgos relacionado a las descargas de agua?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "e7Zf",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "DiJn",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "saaV",
+                    "title": "¿La empresa hace campañas de prevención de salud, especialmente del consumo de tabaco?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "qqTo",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "ASJN",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "mmAI",
+                    "title": "¿La empresa tiene políticas sobre la contratación de menores de edad?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "z3q9",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Nn2F",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "blV5",
+                    "title": "¿La empresa otorga becas para programas de estudios superiores, incluidos programas de formación profesional y programas técnicos, científicos, de ingeniería y de tecnología de la información y las comunicaciones?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "UVrw",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "TNuW",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "M1UB",
+                    "title": "¿La empresa tiene políticas de igualdad de genero?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "u1o1",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "hLWZ",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "H26S",
+                    "title": "¿Existe una proporción equitativa de mujeres en puestos gerenciales y de dirección?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "uIyJ",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "unia",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "kUu8",
+                    "title": "¿La empresa tiene políticas y practicas para contratar servicios de empresas liderada por mujeres, en condiciones de igualdad?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "qhDH",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "oK44",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "WZLt",
+                    "title": "¿La empresa tiene programas de empoderamiento a las mujeres que involucren el uso de la tecnología instrumental, en particular la tecnología de la información y las comunicaciones?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "SYmk",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "XJtg",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "j2Jp",
+                    "title": "¿La empresa tiene políticas de igualdad de genero y empoderamiento de la mujer y las niñas?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "MTOw",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "OsgI",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "fauG",
+                    "title": "¿La empresa trata sus aguas, la recicla y la reutiliza en condiciones de seguridad a nivel mundial?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "Z2ht",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Bw3I",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "S55k",
+                    "title": "¿La empresa tiene un sistema de gestión entregada para disminuir el consumo de agua?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "lrBA",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "fMXo",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "n9s5",
+                    "title": "¿La empresa tiene un sistema de gestión integrada para disminuir la extracción de agua dulce",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "N115",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "ZO1n",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "Ixi6",
+                    "title": "¿La empresa tiene programas para el restablecimiento de ecosistemas relacionados con el agua, incluidos los bosques, las montañas, los humedales, los ríos, los acuíferos y los lagos, según aplique?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "rgb9",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "qkSg",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "I9dF",
+                    "title": "¿La empresa tiene programas de cooperación de transferencia de conocimiento relacionadas a la gestión integral del agua?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "ngR6",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "UsYM",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "zcap",
+                    "title": "¿La empresa tienen programas para apoyar y fortalecer la participación de las comunidades locales en la mejora de la gestión del agua y el saneamiento?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "Drys",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "PnMJ",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "dxIU",
+                    "title": "¿La empresa utiliza en sus operaciones energías limpias o renovables?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "mO4j",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "Ritb",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "WJKc",
+                    "title": "¿La empresa utiliza en sus operaciones energías limpias o renovables?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "LcT6",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "L4vu",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "sEZk",
+                    "title": "¿La empresa financia cooperación internacional a fin de facilitar el acceso a la investigación y las tecnologías energéticas no contaminantes, incluidas las fuentes de energía renovables, la eficiencia energética y las tecnologías avanzadas y menos contaminantes de combustibles fósiles?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "EqyG",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "J6dP",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "r52S",
+                    "title": "¿La empresa financia la infraestructura y mejora de tecnología para prestar servicios de energía modernos y sostenibles para todos?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "kJFy",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "J95t",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "FmWt",
+                    "title": "¿La empresa tiene calcula la relación entre la retribución total anual de la persona mejor pagada de la organización en cada país donde se lleven a cabo operaciones significativas con la retribución total anual media de toda la plantilla (sin contar a la persona mejor pagada) del\u003cbr /\u003epaís correspondiente?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "fFTT",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "vAtN",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "gSro",
+                    "title": "¿La empresa (financiera) provee acceso a servicios financieros para alentar el crecimiento de micro y pequeñas empresas?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "Lqed",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "eAmm",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                },
+                {
+                    "id": "Opri",
+                    "title": "¿Dentro de las horas normales de trabajo los trabajadores son capaces de ganar un salario suficiente para satisfacer sus necesidades básicas  y la de sus dependientes más cercanos?",
+                    "type": "yes_no"
+                },
+                {
+                    "id": "vhM9",
+                    "title": "Seleccione una opción",
+                    "type": "multiple_choice"
+                },
+                {
+                    "id": "SHyT",
+                    "title": "Descripción de la certificación",
+                    "type": "short_text"
+                }
+            ]
+        }
+    }
+}
