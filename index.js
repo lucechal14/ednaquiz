@@ -16,9 +16,20 @@ app.get('/test', function (request, response) {
   response.render('pages/testingPage');
 });
 
-app.get('/download', function (request, response){
+app.get('/download', function (request, response) {
   var file = __dirname + '/examples/typeform_webhook_response.json';
   response.download(file);
+});
+
+app.get('/resultsReport', function (request, response) {
+  var objectWithParams = {
+    city: {
+      name: 'Mexico',
+      description: 'Almost voting day!'
+    }
+  };
+
+  response.render('show.ejs', objectWithParams);
 });
 
 app.listen(app.get('port'), function () {
