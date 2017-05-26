@@ -1,0 +1,30 @@
+{
+    "email": "alnzam17@gmail.com",
+    "fullName": "Alan Zambrano",
+    "categoryYesWithCertification": [
+        { "title": "1. Pregunta..." },
+        { "title": "3. Pregunta..." },
+        { "title": "8. Pregunta..." }
+    ],
+    "categoryYesWithSelfAppraisal": [
+        { "title": "2. Pregunta..." },
+        { "title": "4. Pregunta..." },
+        { "title": "9. Pregunta..." }
+    ],
+    "categoryNo": [
+        { "title": "5. Pregunta..." },
+        { "title": "6. Pregunta..." },
+        { "title": "10. Pregunta..." }
+    ],
+    "categoryNA": [
+        { "title": "7. Pregunta..." },
+        { "title": "11. Pregunta..." }
+    ],
+    "categoryUnavailable": [
+        { "title": "12. Pregunta..." },
+        { "title": "13. Pregunta..." },
+        { "title": "14. Pregunta..." },
+        { "title": "15. Pregunta..." },
+        { "title": "16. Pregunta..." }
+    ]
+}

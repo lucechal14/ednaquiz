@@ -1,0 +1,29 @@
+{
+    "email": "alnzam17@gmail.com",
+    "fullName": "Alan Zambrano",
+    "practice1": {
+        "title": "1. Pregunta...",
+        "answer": "Si",
+        "certification": "Autocertificacion"
+    },
+    "practice2": {
+        "title": "2. Pregunta...",
+        "answer": "51816532",
+        "certification": "51816561"
+    },
+    "practice3": {
+        "title": "3. Pregunta...",
+        "answer": "51816585",
+        "certification": "51816624"
+    },
+    "practice4": {
+        "title": "4. Pregunta...",
+        "answer": "51816737",
+        "certification": "51816740"
+    },
+    "practice5": {
+        "title": "5. Pregunta...",
+        "answer": "51816776",
+        "certification": "51816786"
+    }
+}

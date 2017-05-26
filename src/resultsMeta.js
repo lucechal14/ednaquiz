@@ -1,3 +1,8 @@
+//Sí
+//No
+//N/A
+//Información No Disponible
+
 var meta = {
     practice1: {
         answer: "51816281",
