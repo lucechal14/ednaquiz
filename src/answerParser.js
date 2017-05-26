@@ -12,23 +12,23 @@ module.exports = function (formResponse) {
     var results = this.parseResults();
 
     resultsSummary.categoryYesWithCertification = this.categorizeResults(results, function (r) { 
-      return r.answer === 'Sí' && r.certification === 'Certificación';
+      return r.actualAnswer === 'Sí' && r.actualCertification === 'Certificación';
     });
 
     resultsSummary.categoryYesWithSelfAppraisal = this.categorizeResults(results, function (r) {
-      return r.answer === 'Sí' && r.certification === 'Autoevaluación';
+      return r.actualAnswer === 'Sí' && r.actualCertification === 'Autoevaluación';
     });
 
     resultsSummary.categoryNo = this.categorizeResults(results, function(r){
-      return r.answer === 'No';
+      return r.actualAnswer === 'No';
     });
 
     resultsSummary.categoryNA = this.categorizeResults(results, function(r){
-      return r.answer === 'N/A';
+      return r.actualAnswer === 'N/A';
     });
 
     resultsSummary.categoryUnavailable = this.categorizeResults(results, function(r){
-      return r.answer === 'Información No Disponible';
+      return r.actualAnswer === 'Información No Disponible';
     });
 
     resultsSummary.email = this.getSingleAnswer('51813999')
@@ -44,8 +44,8 @@ module.exports = function (formResponse) {
 
     return _.map(meta, function (m) {
       m.title = getTitle(m.answer);
-      m.certification = getSingleAnswer(m.certification);
-      m.answer = getSingleAnswer(m.answer);
+      m.actualCertification = getSingleAnswer(m.certification);
+      m.actualAnswer = getSingleAnswer(m.answer);
       return m;
     });
   };
@@ -87,7 +87,7 @@ module.exports = function (formResponse) {
     var categoryResults = _.filter(results, evaluation);
 
     categoryResults = _.map(categoryResults, function(r){
-      return { title: r.title };
+      return { title: r.title, practice: r.practice };
     });
 
     return categoryResults;
