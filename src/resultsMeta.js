@@ -1,8 +1,3 @@
-//Sí
-//No
-//N/A
-//Información No Disponible
-
 var meta = [
     {
         practice: "practice1",
