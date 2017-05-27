@@ -20,7 +20,7 @@ app.get('/test', function (request, response) {
 });
 
 app.get('/download', function (request, response) {
-  var file = __dirname + '/debug.txt';
+  var file = __dirname + '/debug.json';
   response.download(file);
 });
 
@@ -38,12 +38,12 @@ app.get('/resultsReport', function (request, response) {
 app.post('/tryme', function(request, response){
   console.log('Connecting typeform');
   
-  main.debug(request.body);
+  main.run(request.body);
   response.sendStatus(200);
 });
 
-app.get('/save' , function(request, response) {
-  main.run();
+app.get('/hello', function(request, response){
+  main.debug(request.body);
   response.sendStatus(200);
 });
 

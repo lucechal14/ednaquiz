@@ -66,7 +66,8 @@ module.exports = function (formResponse) {
     try {
       return getAnswerValue(targetAnswer);
     } catch (e) {
-      throw new Error('Cannot get answer value for ' + definitionId);
+      //console.log('Cannot get answer value for ' + definitionId);
+      return undefined;
     }
   };
 
