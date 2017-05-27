@@ -42,6 +42,11 @@ app.post('/tryme', function(request, response){
   response.sendStatus(200);
 });
 
+app.get('/hello', function(request, response){
+  main.debug(request.body);
+  response.sendStatus(200);
+});
+
 app.listen(app.get('port'), function () {
   console.log('Example app listening on port ', app.get('port'));
 });
