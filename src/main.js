@@ -11,6 +11,6 @@ module.exports = {
 
     debug: function(postObj) {
         var formResponse = postObj.form_response;
-        persists.saveToFile(formResponse);
-    },
+        persists.saveToFile(formResponse);    
+    }
 };
