@@ -1,5 +1,8 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var urlencode = bodyParser.urlencoded({ extended: false });
+
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -32,9 +35,9 @@ app.get('/resultsReport', function (request, response) {
   response.render('show.ejs', objectWithParams);
 });
 
-app.post('/tryme', function(request, response){
+app.post('/tryme', urlencode, function(request, response){
   console.log(request.body)
-  response.send(200);
+  response.sendStatus(200);
 });
 
 app.listen(app.get('port'), function () {
