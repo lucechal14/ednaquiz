@@ -13,8 +13,7 @@ var persists = {
 
     saveJsonToFile: function(objectToSave) {
         var file = './debug.json';
-        var test = {example: 'Whatever'};
-        jsonfile.writeFile(file, test, function (err) {
+        jsonfile.writeFile(file, objectToSave, function (err) {
             console.error(err);
         });
     },
