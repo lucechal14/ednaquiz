@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var urlencode = bodyParser.urlencoded({ extended: false });
-
+var main = require('./src/main');
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -35,8 +35,13 @@ app.get('/resultsReport', function (request, response) {
   response.render('show.ejs', objectWithParams);
 });
 
-app.post('/tryme', urlencode, function(request, response){
-  console.log(request.body)
+app.post('/tryme', function(request, response){
+  console.log(request);
+  response.sendStatus(200);
+});
+
+app.get('/save' , function(request, response) {
+  main.run();
   response.sendStatus(200);
 });
 
