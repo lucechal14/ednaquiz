@@ -7,7 +7,7 @@ var main = require('./src/main');
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(__dirname + '/public'));
-
+app.use(bodyParser.json());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -36,7 +36,8 @@ app.get('/resultsReport', function (request, response) {
 });
 
 app.post('/tryme', function(request, response){
-  console.log(request);
+  console.log('Printing body');
+  console.log(request.body);
   response.sendStatus(200);
 });
 
