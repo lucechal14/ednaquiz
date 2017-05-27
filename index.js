@@ -34,6 +34,7 @@ app.get('/resultsReport', function (request, response) {
 
 app.post('/tryme', function(request, response){
   console.log(request.body)
+  response.send(200);
 });
 
 app.listen(app.get('port'), function () {
