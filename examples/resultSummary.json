@@ -1,24 +1,103 @@
 {
+    "companyName": "Nombre de la compañía",
+    "companyProfile": "Perfil de la compañía",
+    "companyURL": "Aqui va la URL",
+    "numberEmployees": "1-100",
+    "sector": "Sector",
+    "national": "Nacional",
+    "countries": "1-100",
     "email": "alnzam17@gmail.com",
     "fullName": "Alan Zambrano",
+    "position": "Posición",
+    "city": "Ciudad",
+    "gender": "Mujer",
     "categoryYesWithCertification": [
-        { "title": "1. Pregunta..." },
-        { "title": "3. Pregunta..." },
-        { "title": "8. Pregunta..." }
+        {
+            "goalImageClass": "goal1",
+            "goalName": "FIN DE LA POBREZA",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        },
+        {
+            "goalImageClass": "goal2",
+            "goalName": "HAMBRE CERO",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        }
     ],
     "categoryYesWithSelfAppraisal": [
-        { "title": "2. Pregunta..." },
-        { "title": "4. Pregunta..." },
-        { "title": "9. Pregunta..." }
+        {
+            "goalImageClass": "goal3",
+            "goalName": "SALUD Y BIENESTAR",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        },
+        {
+            "goalImageClass": "goal4",
+            "goalName": "EDUCACIÓN DE CALIDAD",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        }
     ],
     "categoryNo": [
-        { "title": "5. Pregunta..." },
-        { "title": "6. Pregunta..." },
-        { "title": "10. Pregunta..." }
+        {
+            "goalImageClass": "goal5",
+            "goalName": "IGUALDAD DE GÉNERO",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        },
+        {
+            "goalImageClass": "goal6",
+            "goalName": "AGUA LIMPIA Y SANEAMIENTO",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        }
     ],
     "categoryNA": [
-        { "title": "7. Pregunta..." },
-        { "title": "11. Pregunta..." }
+        {
+            "goalImageClass": "goal7",
+            "goalName": "ENERGÍ ASEQUIBLE Y NO CONTAMINANTE",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        },
+        {
+            "goalImageClass": "goal8",
+            "goalName": "TRABAJO DECENDE Y CRECIMIENTO ECONÓMICO",
+            "questions": [
+                "1. Pregunta...",
+                "3. Pregunta...",
+                "8. Pregunta..."
+            ]
+
+        }
     ],
     "categoryUnavailable": [
         { "title": "12. Pregunta..." },

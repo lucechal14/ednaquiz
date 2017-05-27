@@ -1,0 +1,350 @@
+.ResultsPage{
+    background-image: url("../images/landing_background.png");
+    background-repeat: no-repeat;
+    font-family: cabin;
+    font-size: 1.2em;
+    background-size: cover;
+    padding: 30px 100px;
+}
+
+div.divider {
+    border-bottom: 2px solid darkgray;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.blue {
+    color: #378FDB;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.infoSection {
+    margin-top: 50px;
+}
+
+.infoRow {
+    color: #6d6d6d;
+}
+
+.companyInfoImg {
+    background-image: url(../images/company.png);
+    height: 73px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.repInfoImg{
+    background-image: url("../images/user.png");
+    height: 73px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Section {
+    border: 3px solid #d9d9d9;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 20px;
+    background-color: white;
+}
+
+.NoImg{
+    content: url("../images/no_cumplo.png");
+    width: 100%;
+    padding: 0px 30px;
+    border-right: 1px solid #979797;
+}
+
+.SelfAppraisalImg{
+    content: url("../images/autoevaluacion.png");
+    width: 100%;
+}
+
+.NAImg{
+    content: url("../images/na.png");
+    width: 100%;
+}
+
+.YesImg{
+    content: url("../images/si_cumplo.png");
+    width: 100%;
+    padding: 0px 30px;
+    border-right: 1px solid #979797;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.goalImage {
+    width: 100%;
+}
+
+.goal1 {
+    content:url("../images/goals/S_SDG_Icons-01-01.png");
+}
+
+.goal2 {
+    content:url("../images/goals/S_SDG_Icons-01-02.png");
+}
+
+.goal3 {
+    content:url("../images/goals/S_SDG_Icons-01-03.png");
+}
+
+.goal4 {
+    content:url("../images/goals/S_SDG_Icons-01-04.png");
+}
+
+.goal5 {
+    content:url("../images/goals/S_SDG_Icons-01-05.png");
+}
+
+.goal6 {
+    content:url("../images/goals/S_SDG_Icons-01-06.png");
+}
+
+.goal7 {
+    content:url("../images/goals/S_SDG_Icons-01-07.png");
+}
+
+.goal8 {
+    content:url("../images/goals/S_SDG_Icons-01-08.png");
+}
+
+.goal9 {
+    content:url("../images/goals/S_SDG_Icons-01-09.png");
+}
+
+.goal10 {
+    content:url("../images/goals/S_SDG_Icons-01-10.png");
+}
+
+.goal11 {
+    content:url("../images/goals/S_SDG_Icons-01-11.png");
+}
+
+.goal12 {
+    content:url("../images/goals/S_SDG_Icons-01-12.png");
+}
+
+.goal13 {
+    content:url("../images/goals/S_SDG_Icons-01-13.png");
+}
+
+.goal14 {
+    content:url("../images/goals/S_SDG_Icons-01-14.png");
+}
+
+.goal15 {
+    content:url("../images/goals/S_SDG_Icons-01-15.png");
+}
+
+.goal16 {
+    content:url("../images/goals/S_SDG_Icons-01-16.png");
+}
+
+.goal17 {
+    content:url("../images/goals/S_SDG_Icons-01-17.png");
+}
+
+.question{
+    color: #b4b4b4;
+    margin-left: 10px;
+}
+
+div.goalSection{
+    padding-left: 50px;
+}
+
+.goalLabel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.goal1Label {
+    color: #e5233d
+}
+
+.goal2Label {
+    color: #dea73a
+}
+
+.goal3Label {
+    color: #4ca146
+}
+
+.goal4Label {
+    color: #c7202f
+}
+
+.goal5Label {
+    color: #ef402c
+}
+
+.goal6Label {
+    color: #27bfe5
+}
+
+.goal7Label {
+    color: #fbc413
+}
+
+.goal8Label {
+    color: #a21c43
+}
+
+.goal9Label {
+    color: #f26a2d
+}
+
+.goal10Label {
+    color: #de1768
+}
+
+.goal11Label {
+    color: #f99d29
+}
+
+.goal12Label {
+    color: #bf8d2c
+}
+
+.goal13Label {
+    color: #407f46
+}
+
+.goal14Label {
+    color: #1e97d4
+}
+
+.goal15Label {
+    color: #5aba47
+}
+
+.goal16Label {
+    color: #136a9f
+}
+
+.goal17Label {
+    color: #15496b
+}
+
+div.col-xs-12.col-md-6{
+    padding: 0px;
+}
+
+div.col-xs-2.col-md-2{
+     padding: 0px;
+}
+
+.SelfAppraisalSection {
+    margin-right: 5px;
+}
+
+.NASection{
+    margin-left: 5px;
+}
+
+.NoTitle {
+    color: #e84849;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.SelfAppraisalTitle {
+    color: #fdbf5e;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.NATitle {
+    color: #797979;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.YesTitle {
+    color: #88cc2f;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.allianceImg{
+    margin-top: 30px;
+    content:url("../images/goals/S_SDG_Icons-01-17.png");
+    width: 100%;
+}
+
+.allianceLabel {
+    color: #19486a;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 166px;
+    margin-bottom: 30px;
+}
+
+.row p{
+    color: #4a4a4a;
+}
+
+.goalsAppliedSection{
+   color: #4a4a4a; 
+}
+
+.goalAppliedImg {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.blogSection {
+    margin-top: 30px;
+    color: #4a4a4a; 
+}
+
+.collabButton {
+    background-image: url(../images/colabora_buton.png);
+    background-repeat: no-repeat;
+    width: 317px;
+    height: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.darkGray{
+    color: #4A4A4A;
+}
+
+
+div#bottomLogos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 525px;
+}
+
+.bottomLogo {
+    margin: 21px;
+    width: 16%;
+}
+
+.mailSection {
+    margin: 60px 0px;
+    color: #4a4a4a;
+}
+
+.footer{
+    margin-top: 30px;
+}

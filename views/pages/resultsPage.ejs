@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /> 
+  <link rel="stylesheet" type="text/css" href="../content/fonts/fonts.css">
+  <link rel="stylesheet" type="text/css" href="../content/style/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../content/style/resultsPage.css">
+  <title>Resultados</title>
+</head>
+<body>
+    <div class="ResultsPage container-fluid">
+        <div class="row blue center">Herramienta de diagnóstico para cumplimiento de los Objetivos de Desarrollo Sostenible</div>
+        <div class="row divider"></div>
+        <div class="row infoSection">
+            <div class="col-xs-12 col-md-6 companyInfo">
+                <div class="row">
+                    <div class="companyInfoImg col-xs-2 col-md-2"></div>
+                    <div class="col-xs-10 col-md-10">
+                        <div class="row infoRow"><%= companyName %></div>
+                        <div class="row infoRow"><%= companyProfile %></div>
+                        <div class="row infoRow"><%= companyURL %></div>
+                        <div class="row infoRow"><%= numberEmployees %></div>
+                        <div class="row infoRow"><%= sector %></div>
+                        <div class="row infoRow"><%= national %></div>
+                        <div class="row infoRow"><%= countries %></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 repInfo">
+                <div class="row">
+                    <div class="repInfoImg col-xs-2 col-md-2"></div>
+                    <div class="col-xs-10 col-md-10">
+                        <div class="row infoRow"><%= fullName %></div>
+                        <div class="row infoRow"><%= position %></div>
+                        <div class="row infoRow"><%= email %></div>
+                        <div class="row infoRow"><%= city %></div>
+                        <div class="row infoRow"><%= gender %></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 Section">
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <div class="row"><img class="NoImg"/></div>
+                        <div class="row NoTitle">No cumplo</div>
+                    </div>
+                    <div class="col-xs-10 col-md-10 goalSection">
+                        <% for(var i = 0; i < categoryNo.length; i++){%>
+                            <div class="row <%= categoryNo[i].goalImageClass %>Label goalLabel"><%= categoryNo[i].goalName %></div>
+                            <div class="row">
+                                <div class="col-xs-2 col-md-2">
+                                    <img class="<%= categoryNo[i].goalImageClass %> goalImage">
+                                </div>
+                                <div class="col-xs-10 col-md-10">
+                                <% for(var j = 0; j < categoryNo[i].questions.length; j++){ %>
+                                    <div class="row question">
+                                        <%= categoryNo[i].questions[j] %>
+                                    </div>
+                                <%}%>
+                                </div>
+                            </div>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="row Section SelfAppraisalSection">
+                    <div class="col-xs-12 col-md-12 borderBottom">
+                        <div class="col-xs-2 col-md-2">
+                            <img class="SelfAppraisalImg"/>
+                        </div>
+                        <div class="col-xs-10 col-md-10 SelfAppraisalTitle">Autoevaluación</div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 goalSection">
+                        <% for(var i = 0; i < categoryYesWithSelfAppraisal.length; i++){%>
+                            <div class="row <%= categoryYesWithSelfAppraisal[i].goalImageClass %>Label goalLabel"><%= categoryYesWithSelfAppraisal[i].goalName %></div>
+                            <div class="row">
+                                <div class="col-xs-2 col-md-2">
+                                    <img class="<%= categoryYesWithSelfAppraisal[i].goalImageClass %> goalImage">
+                                </div>
+                                <div class="col-xs-10 col-md-10">
+                                <% for(var j = 0; j < categoryYesWithSelfAppraisal[i].questions.length; j++){ %>
+                                    <div class="row question">
+                                        <%= categoryYesWithSelfAppraisal[i].questions[j] %>
+                                    </div>
+                                <%}%>
+                                </div>
+                            </div>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="row Section NASection">
+                    <div class="col-xs-12 col-md-12 borderBottom">
+                        <div class="col-xs-2 col-md-2">
+                            <img class="NAImg"/>
+                        </div>
+                        <div class="col-xs-10 col-md-10 NATitle">Información No Disponible</div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 goalSection">
+                        <% for(var i = 0; i < categoryNA.length; i++){%>
+                            <div class="row <%= categoryNA[i].goalImageClass %>Label goalLabel"><%= categoryNA[i].goalName %></div>
+                            <div class="row">
+                                <div class="col-xs-2 col-md-2">
+                                    <img class="<%= categoryNA[i].goalImageClass %> goalImage">
+                                </div>
+                                <div class="col-xs-10 col-md-10">
+                                <% for(var j = 0; j < categoryNA[i].questions.length; j++){ %>
+                                    <div class="row question">
+                                        <%= categoryNA[i].questions[j] %>
+                                    </div>
+                                <%}%>
+                                </div>
+                            </div>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 Section">
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <div class="row"><img class="YesImg"/></div>
+                        <div class="row YesTitle">Sí cumplo</div>
+                    </div>
+                    <div class="col-xs-10 col-md-10 goalSection">
+                        <% for(var i = 0; i < categoryYesWithCertification.length; i++){%>
+                            <div class="row <%= categoryYesWithCertification[i].goalImageClass %>Label goalLabel"><%= categoryYesWithCertification[i].goalName %></div>
+                            <div class="row">
+                                <div class="col-xs-2 col-md-2">
+                                    <img class="<%= categoryYesWithCertification[i].goalImageClass %> goalImage">
+                                </div>
+                                <div class="col-xs-10 col-md-10">
+                                <% for(var j = 0; j < categoryYesWithCertification[i].questions.length; j++){ %>
+                                    <div class="row question">
+                                        <%= categoryYesWithCertification[i].questions[j] %>
+                                    </div>
+                                <%}%>
+                                </div>
+                            </div>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row alliancesSection">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">
+                    <div class="col-xs-2 col-md-2">
+                        <img class="allianceImg"/>
+                    </div>
+                    <div class="col-xs-10 col-md-10">
+                        <div class="allianceLabel">ALIANZAS</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>
+                        Las alianzas son fundamentales para generar un impacto real, es compromiso del sector privado y público colaborar con las instituciones y compañías
+                        que llegan a encontrar en el camino de los esfuerzos para cumplir las metas y objetivos y expander sus fronteras y el cumplimiento de estas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row goalsAppliedSection">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">Lo siguiente son los objetivos y metas donde la companía que representas puede colaborar</div>
+                <div class="row">
+                    <% for(var i = 0; i < categoryYesWithCertification.length; i++){%>
+                        <img class="<%= categoryYesWithCertification[i].goalImageClass %> goalAppliedImg">
+                    <%}%>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blogSection">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">Para fortalecer el intercambio de experiencias en el cumplimiento de las metas da click aqui:</div>
+                <div class="row">
+                    <center>
+                        <div class="collabButton">
+                             <a href="http://proactivosostenible.com/herramienta-de-evaluacion-de-los-ods/">
+                                <img border="0" alt="Colaborar" src="../content/images/colabora_buton.png" style="opacity:0;">
+                            </a>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mailSection">
+            <div class="col-xs-12 col-md-12">
+                <div class="row"><center>Nos interesa tu opinión, mandanos un correo con tus comentarios sobre la herramienta a </center></div>
+                <div class="row"><center><a href="mailto:edna.maqu@proactivosostenible.com" class="blueLink">edna.maqu@proactivosostenible.com</a></center></div>
+            </div>
+        </div>
+
+        <div class="row divider"></div>
+
+        <div class="row center darkGray footer">
+            <label>
+                Metodología elaborada por Proactivos Sostenible en conjunto con Pacto Mundial México
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-xs-0 col-lg-4"></div>
+            <div class="col-xs-12 col-lg-4">
+                <div id="bottomLogos">
+                    <img alt="" class="bottomLogo" id="globalCompact" src="../content/images/global_compact.png"/>
+                    <img alt="" class="bottomLogo" id="objDesarrolloSostenible" src="../content/images/obj_desarrollo_sostenible.png"/>
+                    <img alt="" class="bottomLogo" id="logoProactivo" src="../content/images/logo_proactivo.png"/>
+                </div>
+            </div>
+            <div class="col-xs-0 col-lg-4"></div>
+        </div>
+    </div>
+</body>
+</html>

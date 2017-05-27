@@ -22,14 +22,10 @@ app.get('/download', function (request, response) {
 });
 
 app.get('/resultsReport', function (request, response) {
-  var objectWithParams = {
-    city: {
-      name: 'Mexico',
-      description: 'Almost voting day!'
-    }
-  };
+  var jsonLoader = require('./src/jsonLoader');
+  var results = jsonLoader('resultSummary.json');
 
-  response.render('show.ejs', objectWithParams);
+  response.render('pages/resultsPage', results);
 });
 
 app.listen(app.get('port'), function () {
