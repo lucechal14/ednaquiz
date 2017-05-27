@@ -12,7 +12,7 @@ var persists = {
     },
 
     saveToMongo: function(resultSummary) {
-        var mongoDB = 'mongodb://127.0.0.1/my_database';
+        var mongoDB = process.env.MONGODB_URI || 'mongodb://localhost/my_database';
         mongoose.connect(mongoDB, function (err, res) {
             if (err) { 
                 console.log ('ERROR connecting to db ');

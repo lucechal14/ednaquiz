@@ -1,10 +1,13 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var urlencode = bodyParser.urlencoded({ extended: false });
+var main = require('./src/main');
 
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(__dirname + '/public'));
-
+app.use(bodyParser.json());
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -30,6 +33,18 @@ app.get('/resultsReport', function (request, response) {
   };
 
   response.render('show.ejs', objectWithParams);
+});
+
+app.post('/tryme', function(request, response){
+  console.log('Connecting typeform');
+  
+  main.run(request.body);
+  response.sendStatus(200);
+});
+
+app.get('/save' , function(request, response) {
+  main.run();
+  response.sendStatus(200);
 });
 
 app.listen(app.get('port'), function () {
