@@ -32,6 +32,10 @@ app.get('/resultsReport', function (request, response) {
   response.render('show.ejs', objectWithParams);
 });
 
+app.post('/tryme', function(request, response){
+  console.log(request.body)
+});
+
 app.listen(app.get('port'), function () {
   console.log('Example app listening on port ', app.get('port'));
 });
