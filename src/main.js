@@ -7,5 +7,10 @@ module.exports = {
         var formResponse = postObj.form_response;
         var parser = new AnswerParser(formResponse);
         persists.saveToMongo(parser.getResultsSummary());
-    }
+    },
+
+    debug: function(postObj) {
+        var formResponse = postObj.form_response;
+        persists.saveToFile(formResponse);
+    },
 };

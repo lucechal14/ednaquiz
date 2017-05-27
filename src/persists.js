@@ -5,10 +5,9 @@ var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 
-
 var persists = {
     saveToFile: function(objectToSave) {
-        fs.writeFileSync('./something.txt', util.inspect(objectToSave) , 'utf-8');
+        fs.writeFileSync('./debug.txt', util.inspect(objectToSave) , 'utf-8');
     },
 
     saveToMongo: function(resultSummary) {

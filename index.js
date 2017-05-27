@@ -20,7 +20,7 @@ app.get('/test', function (request, response) {
 });
 
 app.get('/download', function (request, response) {
-  var file = __dirname + '/examples/typeform_webhook_response.json';
+  var file = __dirname + '/debug.txt';
   response.download(file);
 });
 
@@ -38,7 +38,7 @@ app.get('/resultsReport', function (request, response) {
 app.post('/tryme', function(request, response){
   console.log('Connecting typeform');
   
-  main.run(request.body);
+  main.debug(request.body);
   response.sendStatus(200);
 });
 
