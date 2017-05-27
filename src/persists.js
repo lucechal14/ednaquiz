@@ -1,18 +1,26 @@
 var fs = require('fs');
 var util = require('util');
+var jsonfile = require('jsonfile');
 //Import the mongoose module
 var mongoose = require('mongoose');
 
 //Set up default mongoose connection
 
-
 var persists = {
     saveToFile: function(objectToSave) {
-        fs.writeFileSync('./something.txt', util.inspect(objectToSave) , 'utf-8');
+        fs.writeFileSync('./debug.txt', util.inspect(objectToSave) , 'utf-8');
     },
 
+    saveJsonToFile: function(objectToSave) {
+        var file = './debug.json';
+        jsonfile.writeFile(file, objectToSave, function (err) {
+            console.error(err);
+        });
+    },
+
+
     saveToMongo: function(resultSummary) {
-        var mongoDB = 'mongodb://127.0.0.1/my_database';
+        var mongoDB = process.env.MONGODB_URI || 'mongodb://localhost/my_database';
         mongoose.connect(mongoDB, function (err, res) {
             if (err) { 
                 console.log ('ERROR connecting to db ');
