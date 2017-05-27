@@ -1,5 +1,6 @@
 var fs = require('fs');
 var util = require('util');
+var jsonfile = require('jsonfile');
 //Import the mongoose module
 var mongoose = require('mongoose');
 
@@ -9,6 +10,15 @@ var persists = {
     saveToFile: function(objectToSave) {
         fs.writeFileSync('./debug.txt', util.inspect(objectToSave) , 'utf-8');
     },
+
+    saveJsonToFile: function(objectToSave) {
+        var file = './debug.json';
+        
+        jsonfile.writeFile(file, objectToSave, function (err) {
+            console.error(err);
+        });
+    },
+
 
     saveToMongo: function(resultSummary) {
         var mongoDB = process.env.MONGODB_URI || 'mongodb://localhost/my_database';
