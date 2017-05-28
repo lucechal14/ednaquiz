@@ -1,8 +1,13 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 var urlencode = bodyParser.urlencoded({ extended: false });
-var main = require('./src/main');
+
+var persists = require('./src/persists');
+var Results = require('./models/results');
+var jsonLoader = require('./src/jsonLoader');
+var AnswerParser = require('./src/answerParser');
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -31,32 +36,60 @@ app.get('/resultsReport', function (request, response) {
   response.render('pages/resultsPage', results);
 });
 
-app.post('/tryme', function(request, response){
-  console.log('Connecting typeform');
+app.post('/saveResults', function(request, response){
+  console.log('Saving from typeform');
   
-  main.run(request.body);
-  response.sendStatus(200);
-});
+  var postObj = request.body;
 
-app.post('/tryme', function(request, response){
-  console.log('Connecting typeform');
-  
-  main.run(request.body);
-  response.sendStatus(200);
-});
+  var formResponse = postObj.form_response;
+  var parser = new AnswerParser(formResponse);
+  var userResults = parser.getResultsSummary();
 
-app.post('/tryme', function(request, response){
-  console.log('Connecting typeform');
-  
-  main.run(request.body);
+  var newResult = new Results(userResults);
+  newResult.save();
+
   response.sendStatus(200);
 });
 
 app.get('/hello', function(request, response){
-  main.debug(request.body);
+  
+  var obj = {
+    categoryYesWithCertification: [],
+    categoryYesWithSelfAppraisal: [],
+    categoryNo: [],
+    categoryNA: [],
+    categoryUnavailable: [],
+    email: "email@mail.com",
+    fullname: "Alan"
+  };
+
+  var newResult = new Results(obj);
+  newResult.save();
+
   response.sendStatus(200);
+});
+
+app.get('/bye', function(request, response){
+
+   Results.findOne({email: "email@mail.com"}).exec(function (err, result) {
+          if(err) throw err;
+          
+          console.log(result);
+          response.sendStatus(200);
+    });
 });
 
 app.listen(app.get('port'), function () {
   console.log('Example app listening on port ', app.get('port'));
+});
+
+var mongoDB = process.env.MONGODB_URI || 'mongodb://heroku_p5jdj1g6:14q3dm8rjbilpdpt5stunuo2qg@ds155201.mlab.com:55201/heroku_p5jdj1g6';
+// mongodb://localhost/my_database
+// 
+mongoose.connect(mongoDB, function (err, res) {
+    if (err) { 
+        console.log ('ERROR connecting to db ');
+    } else {
+        console.log ('Succeeded connected to db ');
+    }
 });
