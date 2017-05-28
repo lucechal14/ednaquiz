@@ -12,8 +12,8 @@ describe('Parsing Tests', function () {
 
         var resultsSummary = parser.getResultsSummary();
         
-        expect(resultsSummary.email).to.not.be.empty
-        expect(resultsSummary.fullname).to.not.be.empty
+        expect(resultsSummary.email).to.not.be.empty;
+        expect(resultsSummary.fullname).to.not.be.empty;
         expect(resultsSummary.categoryYesWithCertification).to.have.lengthOf(10);
         expect(resultsSummary.categoryYesWithSelfAppraisal).to.have.lengthOf(10);
         expect(resultsSummary.categoryNo).to.have.lengthOf(10);

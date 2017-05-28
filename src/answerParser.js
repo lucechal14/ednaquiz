@@ -33,6 +33,16 @@ module.exports = function (formResponse) {
 
     resultsSummary.email = this.getSingleAnswer('51813999')
     resultsSummary.fullname = this.getSingleAnswer('51813966');
+    resultsSummary.companyName = this.getSingleAnswer('51814106');
+    resultsSummary.companyProfile = 'Perfil';
+    resultsSummary.companyURL = this.getSingleAnswer('51814154');
+    resultsSummary.numberEmployees = this.getSingleAnswer('51814417');
+    resultsSummary.sector = this.getSingleAnswer('51814471');
+    resultsSummary.national = this.getSingleAnswer('51814528');
+    resultsSummary.countries = this.getSingleAnswer('51814579');
+    resultsSummary.position = this.getSingleAnswer('51813985');
+    resultsSummary.city = this.getSingleAnswer('51814010');
+    resultsSummary.gender = this.getSingleAnswer('51814058');
 
     return resultsSummary;
   };

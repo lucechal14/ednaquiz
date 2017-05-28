@@ -1,0 +1,294 @@
+{
+    "_id": {
+        "$oid": "592a3e0c32dfdf000447daae"
+    },
+    "email": "alan.zambrano@globant.com",
+    "fullname": "Alan Zambrano",
+    "categoryUnavailable": [
+        {
+            "practice": "practice41",
+            "title": "41. ¿La empresa tiene un sistema de gestión para medir las emisiones a la atmosfera?"
+        },
+        {
+            "practice": "practice42",
+            "title": "42. ¿La empresa tiene un sistema de prevención y gestión integral de residuos?"
+        },
+        {
+            "practice": "practice43",
+            "title": "43. ¿La empresa apoya a los gobiernos locales en la gestión de áreas verdes?"
+        },
+        {
+            "practice": "practice44",
+            "title": "44. ¿La empresa apoya a los gobiernos locales en la planeación e implementación de vínculos económicos, sociales y ambientales positivos en de las zonas urbanas?"
+        },
+        {
+            "practice": "practice45",
+            "title": "45. ¿La empresa implementa el análisis de ciclo de vida de su producto?"
+        },
+        {
+            "practice": "practice46",
+            "title": "46. ¿La empresa identifica el consumo de material domestico y sus impactos, sociales y ambientales?"
+        },
+        {
+            "practice": "practice47",
+            "title": "47. ¿La empresa tiene un programa de reducción de pérdidas de alimentos en las cadenas de producción y distribución, incluidas las pérdidas posteriores a las cosechas?"
+        },
+        {
+            "practice": "practice48",
+            "title": "48. ¿La empresa hace reportes de gestión de productos químicios?"
+        },
+        {
+            "practice": "practice49",
+            "title": "49. ¿La empresa tiene políticas de reciclajes en su producción?"
+        },
+        {
+            "practice": "practice50",
+            "title": "50. ¿La empresa tiene políticas y acciones de post consumo?"
+        },
+        {
+            "practice": "practice51",
+            "title": "51. ¿Pública un reporte de sostenibilidad?"
+        },
+        {
+            "practice": "practice52",
+            "title": "52. ¿La empresa hace un inventario de emisiones, basado en la Ley General de Cambio Climático?"
+        },
+        {
+            "practice": "practice53",
+            "title": "53. ¿La empresa hace acciones para la mitigación y adaptación al cambio climático según la Ley General de Cambio Climático?"
+        },
+        {
+            "practice": "practice54",
+            "title": "54. ¿La empresa participa en programas de sensibilización y capacitación en relación con la mitigación del cambio climático, la adaptación a él, la reducción de sus efectos y la alerta temprana?"
+        },
+        {
+            "practice": "practice55",
+            "title": "55. ¿La empresa participa en programas para aumentar la capacidad de planificación y gestión eficaces en relación con el cambio climático en los países menos adelantados?"
+        },
+        {
+            "practice": "practice56",
+            "title": "56. ¿La empresa tiene programas para gestionar y proteger de manera sostenible los ecosistemas marinos y costeros con miras a evitar efectos nocivos importantes?"
+        },
+        {
+            "practice": "practice57",
+            "title": "57. ¿La empresa participa en programas para aumentar la capacidad de planificación y gestión eficaces en relación con el cambio climático en los países menos adelantados?"
+        },
+        {
+            "practice": "practice58",
+            "title": "58. ¿La empresa participa en programas para velar por la conservación, el restablecimiento y el uso sostenible de los ecosistemas terrestres y los ecosistemas interiores de agua dulce y los servicios que proporcionan, en particular los bosques, los humedales, las montañas y las zonas áridas?"
+        },
+        {
+            "practice": "practice59",
+            "title": "59. ¿La empresa participa en programas para promover la gestión sostenible de todos los tipos de bosques, poner fin a la deforestación, recuperar los bosques degradados e incrementar la forestación y la reforestación?"
+        },
+        {
+            "practice": "practice60",
+            "title": "60. ¿La empresa participa en un programa para rehabilitar las tierras y los suelos degradados, incluidas las tierras afectadas por la desertificación, la sequía y las inundaciones?"
+        },
+        {
+            "practice": "practice61",
+            "title": "61. ¿La empresa participa en programas que velan por la conservación de los ecosistemas montañosos, incluida su diversidad biológica"
+        },
+        {
+            "practice": "practice62",
+            "title": "62. ¿La empresa participa en programas para reducir la degradación de los hábitats naturales, detener la pérdida de la diversidad biológica y proteger las especies amenazadas y evitar su extinción?"
+        },
+        {
+            "practice": "practice63",
+            "title": "63. ¿La empresa practica la participación justa y equitativa en los beneficios que se deriven de la utilización de los recursos genéticos y promueve el acceso adecuado a esos recursos?"
+        },
+        {
+            "practice": "practice64",
+            "title": "64. ¿La empresa tiene un programa para evitar la caza furtiva y el tráfico de especies protegida?"
+        },
+        {
+            "practice": "practice65",
+            "title": "65. ¿La empresa tiene políticas y practicas para reducir sustancialmente la corrupción y el soborno en todas sus forma?"
+        },
+        {
+            "practice": "practice66",
+            "title": "66. ¿La empresa toma acciones conjuntas con otros actores para realizar y promover iniciativas contra la corrupción?"
+        },
+        {
+            "practice": "practice67",
+            "title": "67. ¿La empresa participa en cooperaciones internacionales para promover en materia de ciencia, tecnología e innovación, el acceso a ellas y aumentar así el intercambio de conocimientos?"
+        },
+        {
+            "practice": "practice68",
+            "title": "68. ¿La empresa invierte en tecnologías ecológicamente racionales y su transferencia, divulgación y difusión a los países en desarrollo en condiciones favorables?"
+        },
+        {
+            "practice": "practice69",
+            "title": "69. ¿La empresa participa en programas que buscan aumentar de forma significativa el acceso universal y asequible a Internet?"
+        }
+    ],
+    "categoryNA": [
+        {
+            "practice": "practice31",
+            "title": "31. ¿La empresa tiene algún programa para contratar a migrantes y apoyarlos en su regularización?"
+        },
+        {
+            "practice": "practice32",
+            "title": "32. ¿La empresa participa en programas para impulsar el campo de la investigación?"
+        },
+        {
+            "practice": "practice33",
+            "title": "33. ¿La empresa utiliza proveedores locales e impulsa el desarrollo de estos?"
+        },
+        {
+            "practice": "practice34",
+            "title": "34. ¿La empresa participa en programas que buscan aumentar de forma significativa el acceso a la tecnología de la información y las comunicaciones así como facilitar el acceso universal y asequible a Internet?"
+        },
+        {
+            "practice": "practice35",
+            "title": "35. ¿Dentro de las horas normales de trabajo los trabajadores son capaces de ganar un salario suficiente para satisfacer sus necesidades básicas y la de sus dependientes más cercanos?"
+        },
+        {
+            "practice": "practice36",
+            "title": "36. ¿La empresa asegura que las decisiones en materia de empleo se basan en criterios relevantes y objetivos?"
+        },
+        {
+            "practice": "practice37",
+            "title": "37. ¿El salario percibido por los trabajadores permite lograr progresivamente una mayor igualdad?"
+        },
+        {
+            "practice": "practice38",
+            "title": "38. ¿La empresa tiene políticas para que el ingreso económico del empleado sea proporcional a los salarios del países de origen de la empresa y que estos cumplan con estándares mundiales?"
+        },
+        {
+            "practice": "practice39",
+            "title": "39. ¿La empresa (constructoras) construye vivienda digna, con servicios básicos adecuados, seguros y asequibles?"
+        },
+        {
+            "practice": "practice40",
+            "title": "40. ¿La empresa (constructora) planifica la infraestructura para otorgar una calidad de vida al usuario?"
+        }
+    ],
+    "categoryNo": [
+        {
+            "practice": "practice21",
+            "title": "21. Energía asequible y no contaminante"
+        },
+        {
+            "practice": "practice22",
+            "title": "22. ¿La empresa financia cooperación internacional a fin de facilitar el acceso a la investigación y las tecnologías energéticas no contaminantes, incluidas las fuentes de energía renovables, la eficiencia energética y las tecnologías avanzadas y menos contaminantes de combustibles fósiles?"
+        },
+        {
+            "practice": "practice23",
+            "title": "23. ¿La empresa financia la infraestructura y mejora de tecnología para prestar servicios de energía modernos y sostenibles para todos?"
+        },
+        {
+            "practice": "practice24",
+            "title": "24. ¿La empresa calcula la relación entre la retribución total anual de la persona mejor pagada de la organización en cada país donde se lleven a cabo operaciones significativas con la retribución total anual media de toda la plantilla (sin contar a la persona mejor pagada) del<br />país correspondiente?"
+        },
+        {
+            "practice": "practice25",
+            "title": "25. ¿La empresa (financiera) provee acceso a servicios financieros para alentar el crecimiento de micro y pequeñas empresas?"
+        },
+        {
+            "practice": "practice26",
+            "title": "26. ¿Dentro de las horas normales de trabajo los trabajadores son capaces de ganar un salario suficiente para satisfacer sus necesidades básicas  y la de sus dependientes más cercanos?"
+        },
+        {
+            "practice": "practice27",
+            "title": "27. ¿La empresa tiene políticas de inserción laboral de personas con discapacidad?"
+        },
+        {
+            "practice": "practice28",
+            "title": "28. ¿Existe una igualdad sustantiva en el proceso de selección de jóvenes?"
+        },
+        {
+            "practice": "practice29",
+            "title": "29. ¿La empresa toma las medidas necesarias para asegurarse de participar en ninguna forma de trabajo forzoso o servidumbre?"
+        },
+        {
+            "practice": "practice30",
+            "title": "30. ¿La empresa toma todas las medidas necesarias para asegurarse que el entorno de trabajo es seguro y protegido para todos los trabajadores?"
+        }
+    ],
+    "categoryYesWithSelfAppraisal": [
+        {
+            "practice": "practice10",
+            "title": "10. ¿Existe una proporción equitativa de mujeres en puestos gerenciales y de dirección?"
+        },
+        {
+            "practice": "practice11",
+            "title": "11. ¿La empresa tiene políticas y practicas para contratar servicios de empresas liderada por mujeres, en condiciones de igualdad?"
+        },
+        {
+            "practice": "practice12",
+            "title": "12. ¿La empresa tiene programas de empoderamiento a las mujeres que involucren el uso de la tecnología instrumental, en particular la tecnología de la información y las comunicaciones?"
+        },
+        {
+            "practice": "practice13",
+            "title": "13. ¿La empresa tiene políticas de igualdad de genero y empoderamiento de la mujer y las niñas?"
+        },
+        {
+            "practice": "practice14",
+            "title": "14. ¿La empresa tiene acciones encaminada a la gestión integrada y tratamiento del agua utilizado en el proceso de producción?"
+        },
+        {
+            "practice": "practice15",
+            "title": "15. ¿La empresa trata sus aguas, la recicla y la reutiliza en condiciones de seguridad a nivel mundial?"
+        },
+        {
+            "practice": "practice16",
+            "title": "16. ¿La empresa tiene un sistema de gestión intregada para disminuir el consumo de agua?"
+        },
+        {
+            "practice": "practice17",
+            "title": "17. ¿La empresa tiene un sistema de gestión integrada para disminuir la extracción de agua dulce?"
+        },
+        {
+            "practice": "practice18",
+            "title": "18. ¿La empresa tiene programas para el restablecimiento de ecosistemas relacionados con el agua, incluidos los bosques, las montañas, los humedales, los ríos, los acuíferos y los lagos, según aplique?"
+        },
+        {
+            "practice": "practice19",
+            "title": "19. ¿La empresa tiene programas de cooperación de transferencia de conocimiento relacionadas a la gestión integral del agua?"
+        },
+        {
+            "practice": "practice20",
+            "title": "20. ¿La empresa tienen programas para apoyar y fortalecer la participación de las comunidades locales en la mejora de la gestión del agua y el saneamiento?"
+        }
+    ],
+    "categoryYesWithCertification": [
+        {
+            "practice": "practice1",
+            "title": "1. ¿La empresa consume o promueve la producción de pequeños agrícolas?"
+        },
+        {
+            "practice": "practice2",
+            "title": "2. ¿La empresa hace actividades de alto riesgo, si es así, cuenta con acciones para la prevención de enfermedades derivadas de la actividad productiva?"
+        },
+        {
+            "practice": "practice3",
+            "title": "3. ¿La empresa hace campañas de prevención de salud, especialmente en prevención de abuso de sustancias adictivas, incluido el uso indebido de estupefacientes y el consumo nocivo de alcohol?"
+        },
+        {
+            "practice": "practice4",
+            "title": "4. ¿La empresa capacita a sus empleados para la prevención de accidentes automovilísticos?"
+        },
+        {
+            "practice": "practice5",
+            "title": "5. ¿La empresa identifica riesgos en sus operaciones, derivadas del manejo de sustancias químicas?"
+        },
+        {
+            "practice": "practice6",
+            "title": "6. ¿La empresa hace campañas de prevención de salud, especialmente del consumo de tabaco?"
+        },
+        {
+            "practice": "practice7",
+            "title": "7. ¿La empresa tiene políticas sobre la contratación adecuada de menores de edad?"
+        },
+        {
+            "practice": "practice8",
+            "title": "8. ¿La empresa otorga becas para programas de estudios superiores, incluidos programas de formación profesional y programas técnicos, científicos, de ingeniería y de tecnología de la información y las comunicaciones?"
+        },
+        {
+            "practice": "practice9",
+            "title": "9. ¿La empresa tiene políticas de igualdad de genero?"
+        }
+    ],
+    "__v": 0
+}

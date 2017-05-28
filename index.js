@@ -8,6 +8,7 @@ var persists = require('./src/persists');
 var Results = require('./models/results');
 var jsonLoader = require('./src/jsonLoader');
 var AnswerParser = require('./src/answerParser');
+var transformToViewModel = require('./src/transformViewModel');
 
 app.set('port', (process.env.PORT || 3000));
 
@@ -30,10 +31,18 @@ app.get('/download', function (request, response) {
 });
 
 app.get('/resultsReport', function (request, response) {
-  var jsonLoader = require('./src/jsonLoader');
-  var results = jsonLoader('resultSummary.json');
 
-  response.render('pages/resultsPage', results);
+  var targetEmail = request.query.email;
+  Results.findOne({email: targetEmail}).exec(function (err, result) {
+          if(err) throw err;
+          
+          try {
+            var viewModel = transformToViewModel(result);
+            response.render('pages/resultsPage', viewModel);
+          } catch (error) {
+            response.sendStatus(400);    
+          }
+    });
 });
 
 app.post('/saveResults', function(request, response){
@@ -49,34 +58,6 @@ app.post('/saveResults', function(request, response){
   newResult.save();
 
   response.sendStatus(200);
-});
-
-app.get('/hello', function(request, response){
-  
-  var obj = {
-    categoryYesWithCertification: [],
-    categoryYesWithSelfAppraisal: [],
-    categoryNo: [],
-    categoryNA: [],
-    categoryUnavailable: [],
-    email: "email@mail.com",
-    fullname: "Alan"
-  };
-
-  var newResult = new Results(obj);
-  newResult.save();
-
-  response.sendStatus(200);
-});
-
-app.get('/bye', function(request, response){
-
-   Results.findOne({email: "email@mail.com"}).exec(function (err, result) {
-          if(err) throw err;
-          
-          console.log(result);
-          response.sendStatus(200);
-    });
 });
 
 app.listen(app.get('port'), function () {
