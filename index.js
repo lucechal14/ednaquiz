@@ -38,7 +38,7 @@ app.get('/resultsReport', function (request, response) {
 app.post('/tryme', function(request, response){
   console.log('Connecting typeform');
   
-  main.debug(request.body);
+  main.run(request.body);
   response.sendStatus(200);
 });
 
