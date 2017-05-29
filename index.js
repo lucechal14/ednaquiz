@@ -31,8 +31,10 @@ app.get('/download', function (request, response) {
 });
 
 app.get('/resultsReport', function (request, response) {
-
+console.log('Starting...');
   var targetEmail = request.query.email;
+console.log(targetEmail);
+  
   Results.findOne({email: targetEmail}).exec(function (err, result) {
           if(err) throw err;
           
@@ -40,6 +42,8 @@ app.get('/resultsReport', function (request, response) {
             var viewModel = transformToViewModel(result);
             response.render('pages/resultsPage', viewModel);
           } catch (error) {
+            console.log('Error!!!');
+            console.log(error);
             response.sendStatus(400);    
           }
     });
