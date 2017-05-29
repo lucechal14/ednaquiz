@@ -171,6 +171,17 @@
             </div>
         </div>
 
+        <div class="row goalsAppliedSection">
+            <div class="col-xs-12 col-md-12">
+                <div class="row">Lo siguiente son los objetivos y metas donde la companía que representas puede colaborar</div>
+                <div class="row">
+                    <% for(var i = 0; i < categoryYesWithCertification.length; i++){%>
+                        <img class="<%= categoryYesWithCertification[i].goalImageClass %> goalAppliedImg">
+                    <%}%>
+                </div>
+            </div>
+        </div>
+
         <div class="row blogSection">
             <div class="col-xs-12 col-md-12">
                 <div class="row">Para fortalecer el intercambio de experiencias en el cumplimiento de las metas da click aqui:</div>
