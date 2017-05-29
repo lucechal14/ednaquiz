@@ -31,9 +31,9 @@ app.get('/download', function (request, response) {
 });
 
 app.get('/resultsReport', function (request, response) {
-console.log('Starting...');
-  var targetEmail = request.query.email;
-console.log(targetEmail);
+
+var targetEmail = request.query.email;
+console.log('Searching results for ', targetEmail);
   
   Results.findOne({email: targetEmail}).exec(function (err, result) {
           if(err) throw err;
@@ -42,7 +42,7 @@ console.log(targetEmail);
             var viewModel = transformToViewModel(result);
             response.render('pages/resultsPage', viewModel);
           } catch (error) {
-            console.log('Error!!!');
+            console.log('Error from results report!!!');
             console.log(error);
             response.sendStatus(400);    
           }
