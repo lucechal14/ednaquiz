@@ -12,19 +12,32 @@ var getGoalInfoByPractice = function(practiceId) {
 
 var questionsAsStringArray = function (questionArray) {
     var x11= _.reduce(questionArray, function (result, value, key) {
-        if (!result.questions) {
-            result.questions = [];
+        
+        if (!result.sections) {
+            result.sections = [];
         }
 
         var goal = getGoalInfoByPractice(value.practice);
+
+        var section = _.find(result.sections, function(s) {
+            return s.goalImageClass === goal.goalClass;
+        });
+
+        if(!section) {
+            section =  {};
+            section.goalImageClass = goal.goalClass;
+            section.goalName = goal.goalName;
+            section.questions = [];
+
+            result.sections.push(section);
+        }
         
-        result.goalImageClass = goal.goalClass;
-        result.goalName = goal.goalName;
-        result.questions.push(value.title);
+        section.questions.push(value.title);        
+
         return result;
     }, {});
 
-    return x11;
+    return x11.sections;
 };
 
 
