@@ -1,6 +1,6 @@
 var _ = require('lodash');
 var goals = require('./goalsMeta');
-
+var GoalsLiterals = require('./goals');
 
 var getGoalInfoByPractice = function(practiceId) {
     return _.find(goals, function(g) {
@@ -31,8 +31,13 @@ var questionsAsStringArray = function (questionArray) {
 
             result.sections.push(section);
         }
-        
-        section.questions.push(value.title);        
+
+        var goalTitle = GoalsLiterals[value.practice];        
+        var exists = _.findIndex(section.questions, function(q) { return q === goalTitle });
+
+        if(exists === -1){
+            section.questions.push(goalTitle);        
+        }
 
         return result;
     }, {});
