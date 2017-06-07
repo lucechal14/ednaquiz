@@ -8,7 +8,7 @@ describe('Simple Transformation', function () {
     it('transforms results into view model', function () {
 
         var results = jsonLoader('herokuDbEntry.json');
-    
+
         var viewModel = transform(results);
     });
 });

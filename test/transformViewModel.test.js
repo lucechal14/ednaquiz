@@ -18,11 +18,10 @@ describe('Transforms', function () {
         expect(viewModel).to.have.property('categoryUnavailable');
 
         expect(viewModel.categoryYesWithCertification).to.be.a('array');
-        
+
         var firstElement = viewModel.categoryYesWithCertification[0];
         expect(firstElement.goalImageClass).to.be.a('string');
         expect(firstElement.goalName).to.be.a('string');
         expect(firstElement.questions).to.be.a('array');
-        //expect(viewModel).to.have.nested.property('categoryYesWithCertification.goalName');
     });
 });

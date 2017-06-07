@@ -11,7 +11,7 @@ describe('Parsing Tests', function () {
         var parser = new AnswerParser(formResponse);
 
         var resultsSummary = parser.getResultsSummary();
-        
+
         expect(resultsSummary.email).to.not.be.empty;
         expect(resultsSummary.fullname).to.not.be.empty;
         expect(resultsSummary.categoryYesWithCertification).to.have.lengthOf(10);
