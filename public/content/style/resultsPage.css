@@ -7,6 +7,12 @@
     color: #4a4a4a;
 }
 
+.intro {
+    color: #6d6d6d;
+    margin-top: 40px;
+    background-color: white;
+}
+
 div.divider {
     border-bottom: 2px solid darkgray;
     width: 800px;
