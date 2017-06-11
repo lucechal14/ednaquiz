@@ -28,13 +28,13 @@ app.get('/test', function (request, response) {
 app.get('/resultsReport', function (request, response) {
 
 var targetEmail = request.query.email;
-console.log('Searching results for ', targetEmail);
-  
+  console.log('Searching results for ', targetEmail);
   Results.findOne({email: targetEmail}).exec(function (err, result) {
           if(err) throw err;
-          
+
           try {
             var viewModel = transformToViewModel(result);
+            persists.saveJsonToFile(viewModel);
             response.render('pages/resultsPage', viewModel);
           } catch (error) {
             console.log('Error from results report!!!');
