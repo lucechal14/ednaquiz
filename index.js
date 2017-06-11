@@ -25,11 +25,6 @@ app.get('/test', function (request, response) {
   response.render('pages/testingPage');
 });
 
-app.get('/download', function (request, response) {
-  var file = __dirname + '/debug.json';
-  response.download(file);
-});
-
 app.get('/resultsReport', function (request, response) {
 
 var targetEmail = request.query.email;
@@ -62,6 +57,18 @@ app.post('/saveResults', function(request, response){
   newResult.save();
 
   response.sendStatus(200);
+});
+
+app.post('/debugResults', function(request, response){
+  console.log('Debugging from typeform');
+  var postObj = request.body;
+  persists.saveJsonToFile(postObj);
+  response.sendStatus(200);
+});
+
+app.get('/download', function (request, response) {
+  var file = __dirname + '/debug.json';
+  response.download(file);
 });
 
 app.listen(app.get('port'), function () {
